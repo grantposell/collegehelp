@@ -122,14 +122,24 @@
                 <option value="Wyoming">Wyoming</option>
             </select>
             <br><br>
-            <h3>What City do you live in?</h3><br/>
-            <input type="text" name="city">
-            <h3>What City do you live in?</h3><br/>
-
-            <h3>What is your preferance of ?</h3>
-            <input type="radio" name="gender" value="male" checked> Male<br>
-            <input type="radio" name="gender" value="female"> Female<br>
-            <input type="radio" name="gender" value="other"> Other<br><br>
+            <h3>What City do you live in?</h3>
+            <input type="text" name="city"><br/><br/>
+            <h3>How far are you willing to move to College?</h3>
+            <select>
+                <option value="0-50">0 - 50 miles</option>
+                <option value="50-100">50 - 100 miles</option>
+                <option value="100-150">100 - 150 miles</option>
+                <option value="150-200">150 - 200 miles</option>
+                <option value="200+">200+ miles</option>
+            </select><br/><br/>
+            <h3>Do you have a preference of location type?</h3>
+            <input type="radio" name="city" value="city" checked> City<br>
+            <input type="radio" name="country" value="country"> Country<br>
+            <input type="radio" name="suburban" value="suburban"> Suburban<br><br>
+            <h3>What is your size preferance of the school?</h3>
+            <input type="radio" name="small" value="small" checked> Small<br>
+            <input type="radio" name="medium" value="medium"> Medium<br>
+            <input type="radio" name="large" value="large"> Large<br><br>
             <input type="submit" value="Submit">
         </form>
     </div><br>
