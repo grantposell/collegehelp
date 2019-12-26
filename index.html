@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="./assets/styles/styles.css">
     <title>College Help</title>
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">College Help</a>
@@ -68,7 +69,7 @@
     <div class="container">
         <form class="idealcollege">
             <h3>What Zipcode do you live in?</h3>
-            <input type="text" name="zipcode"><br /><br />
+            <input type="text" name="zipcode" id="zipInput"><br /><br />
             <h3>How far are you willing to move to College?</h3>
             <select>
                 <option value="50">Up to 50 miles</option>
@@ -85,13 +86,15 @@
             <input type="radio" name="small" value="small" checked> Small<br>
             <input type="radio" name="medium" value="medium"> Medium<br>
             <input type="radio" name="large" value="large"> Large<br><br>
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit" class="survey">
         </form>
     </div><br>
     <div class="formresults"></div>
     <footer class="footer">
         CollegeHelp © 2019 All Rights Reserved
     </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -100,7 +103,7 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+        </script>
     <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js"></script>
     <script src="./assets/scripts/sketch.js"></script>
     <!-- <script src="./assets/scripts/main.js"></script> -->
