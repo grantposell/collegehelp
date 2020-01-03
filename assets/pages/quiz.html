@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/styles.css">
-    <title>College Help</title>
+    <link rel="stylesheet" type="text/css" href="../styles/styles.css">
+    <title>Quiz</title>
 </head>
-
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="./index.html">College Help</a>
+        <a class="navbar-brand" href="../../index.html">College Help</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -28,7 +25,7 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="#">Overview</a>
-                        <a class="dropdown-item" href="./assets/pages/quiz.html">Quiz</a>
+                        <a class="dropdown-item" href="./quiz.html">Quiz</a>
                         <a class="dropdown-item" href="#">Finances</a>
                         <a class="dropdown-item" href="#">Location</a>
                         <a class="dropdown-item" href="#">Major</a>
@@ -60,40 +57,27 @@
             </ul>
         </div>
     </nav>
-    <div class="jumbotron">
-        <h1 class="display-4">Thinking about College?</h1>
-        <p class="lead">College Help is an interactive website built to help you on your journey.</p>
-        <hr class="my-4">
-        <p>Take our quiz about where you should go to College.</p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Start Quiz</a>
-    </div>
-    <div class="container">
-        <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-    </div><br>
-    <div class="formresults"></div>
+    <form class="idealcollege">
+        <h3>What Zipcode do you live in?</h3>
+        <input type="text" name="zipcode" id="zipInput"><br /><br />
+        <h3>How far are you willing to move to College?</h3>
+        <select>
+            <option value="50">Up to 50 miles</option>
+            <option value="100">Up to 100 miles</option>
+            <option value="150">Up to 150 miles</option>
+            <option value="200">Up to 200 miles</option>
+            <option value="200+">200+ miles</option>
+        </select><br /><br />
+        <h3>Do you have a preference of location type?</h3>
+        <input type="radio" name="city" value="city" checked> City<br>
+        <input type="radio" name="country" value="country"> Country<br>
+        <input type="radio" name="suburban" value="suburban"> Suburban<br><br>
+        <h3>What is your size preferance of the school?</h3>
+        <input type="radio" name="small" value="small" checked> Small<br>
+        <input type="radio" name="medium" value="medium"> Medium<br>
+        <input type="radio" name="large" value="large"> Large<br><br>
+        <input type="submit" value="Submit" class="survey">
+    </form>
     <footer class="footer">
         CollegeHelp © 2019 All Rights Reserved
     </footer>
@@ -109,9 +93,5 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
         </script>
     <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js"></script>
-    <script src="./assets/scripts/sketch.js"></script>
-    <script src="./assets/scripts/main.js"></script>
-    <!-- <script src="./assets/scripts/main.js"></script> -->
 </body>
-
 </html>
